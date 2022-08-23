@@ -1,9 +1,14 @@
 .box {
-    width: 200px;
+    width: 800px;
     height: 1000px;
     background-color: black;
     border-radius: 30px;
     padding: 20px;
     border: solid white 5px;
-    margin: 20px
+
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
