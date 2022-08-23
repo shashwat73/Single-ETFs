@@ -10,23 +10,65 @@
 <!-- Header -->
 <div class="header">
 
-    <iframe name="TickerTape" src="https://darqube.com/external-embedding/ticker-tape?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ3aWRnZXQiOnsiYXNzZXRfY2xhc3NlcyI6WyJGT1JFWCJdfSwid190eXBlIjoiVGlja2VyVGFwZSIsImZlX2NmZyI6eyJjbW9kZSI6MCwiZmNsciI6InJnYmEoMjU1LCAyNTUsIDI1NSwgMSkiLCJiZyI6InJnYmEoMjEsIDI1LCAzMCwgMSkiLCJoIjozNzMsInciOjExMDAsImFzeiI6dHJ1ZSwibG5nIjoiZW4iLCJjdHJsdCI6MiwiaGRpY24iOmZhbHNlLCJ3dG1WIjp7InR5cGUiOiJEYXJxdWJlIiwiZW5hYmxlZCI6dHJ1ZX0sImN0cmx2IjoxLCJzbWIiOlt7Im4iOiJBWFMgVFNMQSBCZWFyIERhaWx5IEVURiIsInQiOiJUU0xRLlVTIn0seyJuIjoiQVhTIDEuMjVYIE5WREEgQmVhciBEYWlseSBFVEYiLCJ0IjoiTlZEUy5VUyJ9LHsibiI6IkFYUyAxLjVYIFBZUEwgQmVhciBEYWlseSBFVEYiLCJ0IjoiUFlQUy5VUyJ9LHsibiI6IkFYUyAxLjVYIFBZUEwgQnVsbCBEYWlseSBFVEYiLCJ0IjoiUFlQVC5VUyJ9LHsibiI6IkFYUyAyWCBOS0UgQmVhciBEYWlseSBFVEYiLCJ0IjoiTktFUS5VUyJ9LHsibiI6IkFYUyAyWCBOS0UgQnVsbCBEYWlseSBFVEYiLCJ0IjoiTktFTC5VUyJ9LHsibiI6IkFYUyAyWCBQRkUgQmVhciBEYWlseSBFVEYiLCJ0IjoiUEZFUy5VUyJ9LHsibiI6IkFYUyAyWCBQRkUgQnVsbCBEYWlseSBFVEYiLCJ0IjoiUEZFTC5VUyJ9XSwib3BuIjpmYWxzZX0sImV4cCI6MTY2OTA1MzM5Mywic3ViIjoiYWNjZXNzIn0.PMYev8JcYqv4Kg5JLC6BtQ-pdeJdTvThF7NKKm7yXKE" id="TickerTape" width="100%" height="373"></iframe>
-    <script>
-      window.top.addEventListener("message", function(msg) {
-        const tickerTape = document.getElementById('TickerTape');
-        const height = msg.data?.tickerTapeHeight
-        
-        if (tickerTape && height) {
-          tickerTape.height = height
-        }
-      });
+    <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+      {
+        "description": "AXS Tesla Bear ETF",
+        "proName": "NASDAQ:TSLQ"
+      },
+      {
+        "description": "AXS 1.25X Nvidia Bear ETF",
+        "proName": "NASDAQ:NVDS"
+      },
+      {
+        "description": "AXS 1.5X PayPal Bear ETF",
+        "proName": "NASDAQ:PYPS"
+      },
+      {
+        "description": "AXS 1.5X PayPal Bull ETF",
+        "proName": "NASDAQ:PYPT"
+      },
+      {
+        "description": "AXS 2X Nike Bear ETF",
+        "proName": "NASDAQ:NKEQ"
+      },
+      {
+        "description": "AXS 2X Nike Bull ETF",
+        "proName": "NASDAQ:NKEL"
+      },
+      {
+        "description": "AXS 2X Pfizer Bear ETF",
+        "proName": "NASDAQ:PFES"
+      },
+      {
+        "description": "AXS 2X Pfizer Bull ETF",
+        "proName": "NASDAQ:PFEL"
+      }
+    ],
+    "showSymbolLogo": true,
+    "colorTheme": "dark",
+    "isTransparent": false,
+    "displayMode": "adaptive",
+    "locale": "en"
+  }
     </script>
-    
-<!-- Dark Mode Button-->
-<button onclick="darkmode()"><i class="fa fa-affiliatetheme"></i></button>
+  </div>
 
+
+<!-- Calling Dark Mode-->
+<script>
+    darkmode()
+</script>
 </div>
 </head>
+
+
+
 
 <html>
 <body>
@@ -34,8 +76,6 @@
 <!-- Center Box -->
 <div class="box">
 </div>
-
-<iframe name="NewsWidget" src="https://darqube.com/external-embedding/news-widget?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ3aWRnZXQiOnsibmV3cyI6WyJDTkJDIiwiQ05OIiwiUmV1dGVycyJdLCJ0d191aWRzIjpbIjY5NjIwNzEzIiwiOTI4NzU5MjI0NTk5MDQwMDAxIiwiMTUxMTAzNTciXX0sIndfdHlwZSI6Ik5ld3NXaWRnZXQiLCJmZV9jZmciOnsiY21vZGUiOjAsImZjbHIiOiJyZ2JhKDI1NSwgMjU1LCAyNTUsIDEpIiwiYmciOiJyZ2JhKDIxLCAyNSwgMzAsIDEpIiwiaCI6NzY1LCJ3IjozMzAsImFzeiI6dHJ1ZSwibG5nIjoiZW4iLCJoZGljbiI6ZmFsc2UsInd0bVYiOnsidHlwZSI6IkRhcnF1YmUiLCJlbmFibGVkIjp0cnVlfX0sImV4cCI6MTY2OTA1NDM0Miwic3ViIjoiYWNjZXNzIn0.H2sLIIG9omREywstXkEK6YHq74-GmxZfBMK9FcRV8DY" id="NewsWidget" width="100%" height="100%"></iframe>
 
 </body>
 </html>
