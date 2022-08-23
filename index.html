@@ -4,14 +4,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="src/main.js"></script>
+    
+<!-- Header -->
+<div class="header">
+
+    <iframe name="TickerTape" src="https://darqube.com/external-embedding/ticker-tape?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ3aWRnZXQiOnsiYXNzZXRfY2xhc3NlcyI6WyJGT1JFWCJdfSwid190eXBlIjoiVGlja2VyVGFwZSIsImZlX2NmZyI6eyJjbW9kZSI6MCwiZmNsciI6InJnYmEoMjU1LCAyNTUsIDI1NSwgMSkiLCJiZyI6InJnYmEoMjEsIDI1LCAzMCwgMSkiLCJoIjozNzMsInciOjExMDAsImFzeiI6dHJ1ZSwibG5nIjoiZW4iLCJjdHJsdCI6MiwiaGRpY24iOmZhbHNlLCJ3dG1WIjp7InR5cGUiOiJEYXJxdWJlIiwiZW5hYmxlZCI6dHJ1ZX0sImN0cmx2IjoxLCJzbWIiOlt7Im4iOiJBWFMgVFNMQSBCZWFyIERhaWx5IEVURiIsInQiOiJUU0xRLlVTIn0seyJuIjoiQVhTIDEuMjVYIE5WREEgQmVhciBEYWlseSBFVEYiLCJ0IjoiTlZEUy5VUyJ9LHsibiI6IkFYUyAxLjVYIFBZUEwgQmVhciBEYWlseSBFVEYiLCJ0IjoiUFlQUy5VUyJ9LHsibiI6IkFYUyAxLjVYIFBZUEwgQnVsbCBEYWlseSBFVEYiLCJ0IjoiUFlQVC5VUyJ9LHsibiI6IkFYUyAyWCBOS0UgQmVhciBEYWlseSBFVEYiLCJ0IjoiTktFUS5VUyJ9LHsibiI6IkFYUyAyWCBOS0UgQnVsbCBEYWlseSBFVEYiLCJ0IjoiTktFTC5VUyJ9LHsibiI6IkFYUyAyWCBQRkUgQmVhciBEYWlseSBFVEYiLCJ0IjoiUEZFUy5VUyJ9LHsibiI6IkFYUyAyWCBQRkUgQnVsbCBEYWlseSBFVEYiLCJ0IjoiUEZFTC5VUyJ9XSwib3BuIjpmYWxzZX0sImV4cCI6MTY2OTA1MzM5Mywic3ViIjoiYWNjZXNzIn0.PMYev8JcYqv4Kg5JLC6BtQ-pdeJdTvThF7NKKm7yXKE" id="TickerTape" width="100%" height="373"></iframe>
+    <script>
+      window.top.addEventListener("message", function(msg) {
+        const tickerTape = document.getElementById('TickerTape');
+        const height = msg.data?.tickerTapeHeight
+        
+        if (tickerTape && height) {
+          tickerTape.height = height
+        }
+      });
+    </script>
+    
+<!-- Dark Mode Button-->
+<button onclick="darkmode()"><i class="fa fa-affiliatetheme"></i></button>
+
+</div>
 </head>
 
 <html>
 <body>
 
+<!-- Center Box -->
 <div class="box">
-
 </div>
+
+<iframe name="NewsWidget" src="https://darqube.com/external-embedding/news-widget?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ3aWRnZXQiOnsibmV3cyI6WyJDTkJDIiwiQ05OIiwiUmV1dGVycyJdLCJ0d191aWRzIjpbIjY5NjIwNzEzIiwiOTI4NzU5MjI0NTk5MDQwMDAxIiwiMTUxMTAzNTciXX0sIndfdHlwZSI6Ik5ld3NXaWRnZXQiLCJmZV9jZmciOnsiY21vZGUiOjAsImZjbHIiOiJyZ2JhKDI1NSwgMjU1LCAyNTUsIDEpIiwiYmciOiJyZ2JhKDIxLCAyNSwgMzAsIDEpIiwiaCI6NzY1LCJ3IjozMzAsImFzeiI6dHJ1ZSwibG5nIjoiZW4iLCJoZGljbiI6ZmFsc2UsInd0bVYiOnsidHlwZSI6IkRhcnF1YmUiLCJlbmFibGVkIjp0cnVlfX0sImV4cCI6MTY2OTA1NDM0Miwic3ViIjoiYWNjZXNzIn0.H2sLIIG9omREywstXkEK6YHq74-GmxZfBMK9FcRV8DY" id="NewsWidget" width="100%" height="100%"></iframe>
 
 </body>
 </html>
