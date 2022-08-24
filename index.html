@@ -7,64 +7,67 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="src/main.js"></script>
     
-<!-- Header -->
-<div class="header">
-
-<!-- Stock Scroll Widget Begin -->
-
-<div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-    {
-    "symbols": [
-      {
-        "description": "AXS Tesla Bear ETF",
-        "proName": "NASDAQ:TSLQ"
-      },
-      {
-        "description": "AXS 1.25X Nvidia Bear ETF",
-        "proName": "NASDAQ:NVDS"
-      },
-      {
-        "description": "AXS 1.5X PayPal Bear ETF",
-        "proName": "NASDAQ:PYPS"
-      },
-      {
-        "description": "AXS 1.5X PayPal Bull ETF",
-        "proName": "NASDAQ:PYPT"
-      },
-      {
-        "description": "AXS 2X Nike Bear ETF",
-        "proName": "NASDAQ:NKEQ"
-      },
-      {
-        "description": "AXS 2X Nike Bull ETF",
-        "proName": "NASDAQ:NKEL"
-      },
-      {
-        "description": "AXS 2X Pfizer Bear ETF",
-        "proName": "NASDAQ:PFES"
-      },
-      {
-        "description": "AXS 2X Pfizer Bull ETF",
-        "proName": "NASDAQ:PFEL"
-      }
-    ],
-    "showSymbolLogo": true,
-    "colorTheme": "dark",
-    "isTransparent": false,
-    "displayMode": "adaptive",
-    "locale": "en"
-  }
-    </script>
-  </div>
-<!-- Widget End-->
 
 <!-- Calling Dark Mode-->
 <script>
-    darkmode()
+darkmode()
 </script>
+
+<!-- Header -->
+<div class="header">
+
+
+<!-- Stock Scroll Widget Begin -->
+<div class="tickertape">
+  <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+      {
+      "symbols": [
+        {
+          "description": "AXS Tesla Bear ETF",
+          "proName": "NASDAQ:TSLQ"
+        },
+        {
+          "description": "AXS 1.25X Nvidia Bear ETF",
+          "proName": "NASDAQ:NVDS"
+        },
+        {
+          "description": "AXS 1.5X PayPal Bear ETF",
+          "proName": "NASDAQ:PYPS"
+        },
+        {
+          "description": "AXS 1.5X PayPal Bull ETF",
+          "proName": "NASDAQ:PYPT"
+        },
+        {
+          "description": "AXS 2X Nike Bear ETF",
+          "proName": "NASDAQ:NKEQ"
+        },
+        {
+          "description": "AXS 2X Nike Bull ETF",
+          "proName": "NASDAQ:NKEL"
+        },
+        {
+          "description": "AXS 2X Pfizer Bear ETF",
+          "proName": "NASDAQ:PFES"
+        },
+        {
+          "description": "AXS 2X Pfizer Bull ETF",
+          "proName": "NASDAQ:PFEL"
+        }
+      ],
+      "showSymbolLogo": true,
+      "colorTheme": "dark",
+      "isTransparent": false,
+      "displayMode": "adaptive",
+      "locale": "en"
+    }
+      </script>
+    </div>
+  <!-- Widget End-->
+  </div>
 </div>
 </head>
 
@@ -75,90 +78,115 @@
 <body>
 
 <!-- Center Box -->
-<div class="box">
 
-<!-- Stock List -->
+<div class="wrapper">
+  <div class="box">
 
-<!-- Stock Widget BEGIN -->
-<div class="tradingview-widget-container">  
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
-    {
-    "width": "100%",
-    "height": "100%",
-    "symbolsGroups": [
-      {
-        "name": "Single-Stock ETFs",
-        "symbols": [
+
+  <!-- Stock List -->
+    <div class="tradingview-widget-container">  
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+        {
+        "width": "100%",
+        "height": "100%",
+        "symbolsGroups": [
           {
-            "name": "NASDAQ:TSLQ",
-            "displayName": "AXS Tesla Bear ETF"
+            "name": "Single-Stock ETFs",
+            "symbols": [
+              {
+                "name": "NASDAQ:TSLQ",
+                "displayName": "AXS Tesla Bear ETF"
+              },
+              {
+                "name": "NASDAQ:NVDS",
+                "displayName": "AXS 1.25X Nvidia Bear ETF"
+              },
+              {
+                "name": "NASDAQ:PYPS",
+                "displayName": "AXS 1.5X PayPal Bear ETF"
+              },
+              {
+                "name": "NASDAQ:PYPT",
+                "displayName": "AXS 1.5X PayPal Bull ETF"
+              },
+              {
+                "name": "NASDAQ:NKEQ",
+                "displayName": "AXS 2X Nike Bear ETF"
+              },
+              {
+                "name": "NASDAQ:NKEL",
+                "displayName": "AXS 2X Nike Bull ETF"
+              },
+              {
+                "name": "NASDAQ:PFES",
+                "displayName": "AXS 2X Pfizer Bear ETF"
+              },
+              {
+                "name": "NASDAQ:PFEL",
+                "displayName": "AXS 2X Pfizer Bull ETF"
+              }
+            ]
           },
           {
-            "name": "NASDAQ:NVDS",
-            "displayName": "AXS 1.25X Nvidia Bear ETF"
-          },
-          {
-            "name": "NASDAQ:PYPS",
-            "displayName": "AXS 1.5X PayPal Bear ETF"
-          },
-          {
-            "name": "NASDAQ:PYPT",
-            "displayName": "AXS 1.5X PayPal Bull ETF"
-          },
-          {
-            "name": "NASDAQ:NKEQ",
-            "displayName": "AXS 2X Nike Bear ETF"
-          },
-          {
-            "name": "NASDAQ:NKEL",
-            "displayName": "AXS 2X Nike Bull ETF"
-          },
-          {
-            "name": "NASDAQ:PFES",
-            "displayName": "AXS 2X Pfizer Bear ETF"
-          },
-          {
-            "name": "NASDAQ:PFEL",
-            "displayName": "AXS 2X Pfizer Bull ETF"
+            "name": "Target Stocks",
+            "symbols": [
+              {
+                "name": "NASDAQ:TSLA",
+                "displayName": "Tesla Inc."
+              },
+              {
+                "name": "NASDAQ:NVDA",
+                "displayName": "NVIDIA Corporation"
+              },
+              {
+                "name": "NASDAQ:PYPL",
+                "displayName": " PayPal Holdings Inc."
+              },
+              {
+                "name": "NYSE:NKE",
+                "displayName": "Nike Inc."
+              },
+              {
+                "name": "NYSE:PFE",
+                "displayName": "Pfizer Inc."
+              }
+            ]
           }
-        ]
-      },
-      {
-        "name": "Target Stocks",
-        "symbols": [
-          {
-            "name": "NASDAQ:TSLA",
-            "displayName": "Tesla Inc."
-          },
-          {
-            "name": "NASDAQ:NVDA",
-            "displayName": "NVIDIA Corporation"
-          },
-          {
-            "name": "NASDAQ:PYPL",
-            "displayName": " PayPal Holdings Inc."
-          },
-          {
-            "name": "NYSE:NKE",
-            "displayName": "Nike Inc."
-          },
-          {
-            "name": "NYSE:PFE",
-            "displayName": "Pfizer Inc."
-          }
-        ]
+        ],
+        "showSymbolLogo": true,
+        "colorTheme": "dark",
+        "isTransparent": false,
+        "locale": "en"
       }
-    ],
-    "showSymbolLogo": true,
+        </script>
+      </div>
+    <!-- Stock Widget End -->
+  </div>
+
+<div class="box2">
+<!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
+    {
+    "feedMode": "market",
     "colorTheme": "dark",
     "isTransparent": false,
-    "locale": "en"
+    "displayMode": "regular",
+    "width": "100%",
+    "height": "100%",
+    "locale": "en",
+    "market": "stock"
   }
     </script>
-  </div>
-  <!-- Stock Widget End -->
-
 </div>
-
+<!-- TradingView Widget END -->
+</div>
 </body>
+
+<!-- Calling Dark Mode -->
+<script>
+  darkmode()
+</script>
+
 </html>
